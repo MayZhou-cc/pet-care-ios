@@ -5,14 +5,15 @@ This project focusing on the education and tracking of pet's health. The calenda
 
 (Small gaming system is under developing)
 
-Main screen: UI DONE 
-            working on irtual pet health and happiness status
-Setting screen: UI DONE.
-Calendar screen: UI DONE.
-Shop screen: working on
-Educational screen: working on
-Navigation: DONE
-Firebase: working on
+<ul>
+  <li>Main screen: UI DONE </li>
+  <li>Setting screen: UI DONE.</li>
+  <li>Calendar screen: UI DONE.</li>
+  <li>Shop screen: UI DONE.</li>
+  <li>Educational screen: working on.</li>
+  <li>Navigation: DONE</li>
+  <li>Backend: working on</li>
+</ul>
 
 ## Responsive screens setting
 npm install react-native-responsive-screen --save
