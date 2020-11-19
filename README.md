@@ -14,10 +14,6 @@ Educational screen: working on
 Navigation: DONE
 Firebase: working on
 
-
-
-npm install
-
 # Responsive screens setting
 npm install react-native-responsive-screen --save
 
