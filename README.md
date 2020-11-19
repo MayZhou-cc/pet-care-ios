@@ -5,6 +5,9 @@ This project focusing on the education and tracking of pet's health. The calenda
 
 (Small gaming system is under developing)
 
+![Cat1](https://user-images.githubusercontent.com/55878370/99655014-e29fe700-2aa6-11eb-93d9-34ca17d35e29.png)
+
+
 <ul>
   <li>Main screen: UI DONE </li>
   <li>Setting screen: UI DONE.</li>
