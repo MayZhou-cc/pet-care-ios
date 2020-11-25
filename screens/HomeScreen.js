@@ -33,7 +33,7 @@ export default class HomeScreen extends Component {
         return (
           <Image
             style={styles.avatar}
-            source={require("../assets/avatar/avatar_1.png")}
+            source={require("../assets/avatar/niangao.png")}
           />
         );
       } else if (avatarHealth > 60 && avatarHealth <= 80) {

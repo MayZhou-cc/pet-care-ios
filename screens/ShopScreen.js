@@ -16,6 +16,8 @@ export default class ShopScreen extends Component {
     };
   }
 
+  list = ["https://www.petbarn.com.au/", "https://www.petbarn.com.au/", "https://www.petstock.com.au/"];
+
   render() {
     const background = getBackgroundImage(this.state.backgroundColor);
 
@@ -27,19 +29,19 @@ export default class ShopScreen extends Component {
             {/* TO DO: Add those to a list. */}
             <ShopCard
               title="Petbarn"
-              url="https://www.petbarn.com.au/"
+              url={this.list[0]}
               coversUrl="https://picsum.photos/700"
             />
 
             <ShopCard
               title="Pet Circle"
-              url="https://www.petbarn.com.au/"
+              url={this.list[1]}
               coversUrl="https://picsum.photos/700"
             />
 
             <ShopCard
               title="PETstock"
-              url="https://www.petstock.com.au/"
+              url={this.list[2]}
               coversUrl="https://picsum.photos/700"
             />
           </ScrollView>
