@@ -5,17 +5,17 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 import { RFValue } from "react-native-responsive-fontsize";
 
 // This is the main header across all screens
-const Header = props => {
+const Header = ({ navigation }) => {
   return (
     <View style={styles.header}>
       <FontAwesome
         style={styles.iconStyle}
         name="home"
-        onPress={() => props.route.navigation.navigate("Home")} />
+        onPress={() => navigation.navigate("Home")} />
       <MaterialIcons
         style={styles.iconStyle}
         name="settings"
-        onPress={() => props.route.navigation.navigate("Settings")} />
+        onPress={() => navigation.navigate("Settings")} />
     </View>
   );
 };

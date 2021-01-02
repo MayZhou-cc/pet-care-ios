@@ -49,7 +49,7 @@ function reading(item) {
   );
 }
 
-export default class EducationalScreen extends Component {
+export default class MomentsScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {
