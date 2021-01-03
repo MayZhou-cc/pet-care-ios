@@ -1,18 +1,18 @@
 import React, { Component, useState } from "react";
 import { StyleSheet, ImageBackground, Text, Image, View, TouchableOpacity } from "react-native";
+import { ProgressBar, Colors } from "react-native-paper";
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { RFValue } from "react-native-responsive-fontsize";
-import { ProgressBar, Colors } from "react-native-paper";
 import { getBackgroundImage } from "../components/images";
 import Header from "../components/Header";
 
 export default function HomeScreen({ navigation }) {
-  const [avatarCharacter, setAvatarCharacter] = useState(0)
   const [avatarStatus, setAvatarStatus] = useState(100)
   const [avatarHealth, setAvatarHealth] = useState(100)
   const [backgroundColor, setBackgroundColor] = useState(1)
 
   const background = getBackgroundImage(backgroundColor);
+
   return (
     <View style={styles.container}>
       <ImageBackground source={background} style={styles.backgroundImage}>
@@ -48,26 +48,17 @@ export default function HomeScreen({ navigation }) {
         </View>
 
         <View style={styles.buttonContainer}>
-          <TouchableOpacity
-            style={styles.customBtnBG}
-            onPress={() => navigation.navigate("Calendar")}
-          >
+          <TouchableOpacity style={styles.customBtnBG} onPress={() => navigation.navigate("Calendar")}>
             <Text style={styles.customBtnText}>Calendar</Text>
           </TouchableOpacity>
-
-          <TouchableOpacity
-            style={styles.customBtnBG}
+          <TouchableOpacity style={styles.customBtnBG}
             onPress={() =>
-              navigation.navigate("Moments")
+              navigation.navigate("Auth")
             }
           >
             <Text style={styles.customBtnText}>Pets Moments</Text>
           </TouchableOpacity>
-
-          <TouchableOpacity
-            style={styles.customBtnBG}
-            onPress={() => navigation.navigate("Shop")}
-          >
+          <TouchableOpacity style={styles.customBtnBG} onPress={() => navigation.navigate("Shop")}>
             <Text style={styles.customBtnText}>Shop</Text>
           </TouchableOpacity>
         </View>
